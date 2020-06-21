@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Greetings!</title>
+</head>
+<body>
+     <div class='login-container'>
+         <h1>'Hello' in native language</h1>
+         <div class='login-pannel'>
+             <input type="text" id='username' class='input-element' placeholder="Username" onchange="handleChange()" />
+             <input type='password' id='password' class='input-element' placeholder="Your IP adress" onchange="handleChange()"  />
+
+             <button onclick="handleSubmit()">Login</button>
+         </div>
+     </div>
+
+     <div id='greeting-page'>
+         <h1 id='greeting'></h1>
+         <button onclick='handleLogout()'>Logout</button>
+     </div>
+</body>
+<script src="index.js"></script>
+</html>
